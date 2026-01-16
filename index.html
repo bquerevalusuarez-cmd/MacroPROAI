@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MacrosApp - Entrenador y Recetas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Menú principal -->
+  <header>
+    <h1>MacrosApp</h1>
+    <nav>
+      <button onclick="showSection('alimentos')">Alimentos</button>
+      <button onclick="showSection('recetas')">Recetas</button>
+      <button onclick="showSection('entrenador')">Entrenador</button>
+      <button onclick="showSection('progreso')">Progreso</button>
+      <button onclick="showSection('ajustes')">Ajustes</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección Alimentos -->
+    <section id="alimentos">
+      <h2>Alimentos y Bebidas</h2>
+      <input type="text" id="search" placeholder="Buscar alimento...">
+      <div id="food-list"></div>
+    </section>
+
+    <!-- Sección Recetas combinadas -->
+    <section id="recetas" style="display:none;">
+      <h2>Recetas Combinadas</h2>
+      <p>Selecciona alimentos para crear tu receta:</p>
+      <div id="recipe-foods"></div>
+      <button onclick="calculateRecipe()">Calcular Macros</button>
+      <div id="recipe-result"></div>
+    </section>
+
+    <!-- Sección Entrenador / Objetivo -->
+    <section id="entrenador" style="display:none;">
+      <h2>Entrenador - Objetivo</h2>
+      <p>Define tu objetivo:</p>
+      <button onclick="setGoal('definicion')">Definición</button>
+      <button onclick="setGoal('volumen')">Volumen</button>
+      <div id="goal-result"></div>
+    </section>
+
+    <!-- Sección Progreso -->
+    <section id="progreso" style="display:none;">
+      <h2>Progreso Diario</h2>
+      <div id="daily-log"></div>
+      <button onclick="clearLog()">Limpiar registro</button>
+    </section>
+
+    <!-- Sección Ajustes -->
+    <section id="ajustes" style="display:none;">
+      <h2>Ajustes del Usuario</h2>
+      <label>Peso (kg): <input type="number" id="user-weight"></label><br>
+      <label>Altura (cm): <input type="number" id="user-height"></label><br>
+      <label>Edad: <input type="number" id="user-age"></label><br>
+      <label>Sexo: 
+        <select id="user-sex">
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+        </select>
+      </label><br>
+      <button onclick="saveUserData()">Guardar Datos</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>MacrosApp © 2026 - Brandon Q.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+Crear index.html con la estructura completa de la app

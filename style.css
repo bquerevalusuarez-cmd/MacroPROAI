@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #16a085;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#food-list, #recipe-foods, #daily-log {
+  margin-top: 15px;
+}
+
+.food-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: white;
+}
+
+#recipe-result, #goal-result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+Crear style.css con estilos para la app
